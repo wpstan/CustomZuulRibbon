@@ -1,5 +1,6 @@
-package com.wpstan.custom.zuul;
+package com.wpstan.custom.config;
 
+import com.wpstan.custom.zuul.CustomRouteLocator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
