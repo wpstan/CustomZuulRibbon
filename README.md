@@ -187,7 +187,7 @@ public class CustomServerList implements ServerList<Server>, IClientConfigAware 
 ```
 ### CustomRule.java
 自定义IRule类，RibbonRoutingFilter过滤器会根据请求的url地址，首先匹配service-id，
-然后根据service-id匹配的IRule实现了你，从IRule中获取一个目的主机地址，当前CustomRule采用IP Hash算法，同时根据ServerStatus维护的主机状态获取目的主机。
+然后根据service-id匹配的IRule实现类，从IRule中获取一个目的主机地址，当前CustomRule采用IP Hash算法，同时根据ServerStatus维护的主机状态获取目的主机。
 ``` java
 public Server choose(ILoadBalancer lb, Object key) {
         //首先获取可用的后台主机，可用的后台主机会根据定时任务不断调用ServerList中的getUpdatedListOfServers()方法来维护
